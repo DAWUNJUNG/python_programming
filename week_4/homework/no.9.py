@@ -1,8 +1,10 @@
-number = input("정수=")
+number = int(input("정수="))
 
-sum = 0
+sum_of_digits = 0
 
-for i in number:
-    sum += int(i)
+while number > 0:
+    digit = number % 10
+    sum_of_digits += digit
+    number = number // 10
 
-print(sum)
+print(sum_of_digits)
