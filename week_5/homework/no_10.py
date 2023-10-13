@@ -7,4 +7,4 @@ if x < 0:
 else :
     fx = (7 * x) + 2
 
-print(f"f(x)의 값은 {fx}")
+print(f"f(x)의 값은 {fx:.6f}")
