@@ -1,7 +1,13 @@
-height = int(input('키를 입력하시오(cm): '))
-age = int(input('나이를 입력하시오: '))
+weight, tall = input('체중과 키를 입력하시오: ').split()
 
-if height >= 140 and age >= 10:
-    print('타고 좋습니다.')
+weight = int(weight)
+tall = int(tall)
+
+avg_weight = (tall - 100) * 0.9
+
+if (avg_weight > weight):
+    print('저체중입니다.')
+elif (avg_weight < weight):
+    print('과체중입니다.')
 else:
-    print('죄송합니다')
+    print('표준입니다.')
